@@ -1,2 +1,6 @@
 # gpt-eval-translations
-Evaluate translations by either a self-hosted Embedder or using Chat-GPT
+
+Evaluate translations via either a self-hosted Embedder or using Chat-GPT.
+
+- (self-hosted) Evaluate translations [via a local SBERT embedder](./src/eval-via-embedder/README.md)
+- (remote) Evaluate translations [via Chat-GPT](./src/eval-via-chat-gpt/README.md)
