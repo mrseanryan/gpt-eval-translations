@@ -78,12 +78,16 @@ def evaluate_from_csv(path_to_csv_file, pairs_per_prompt):
             need_new_chunk = len(new_chunk) == pairs_per_prompt or pair.source_language != source_language or pair.target_language != target_language
             if need_new_chunk:
                 pairs_chunks_same_languages.append(new_chunk)
+                source_language = pair.source_language
+                target_language = pair.target_language
                 new_chunk = [pair]
             else:
                 new_chunk.append(pair)
         pairs_chunks_same_languages.append(new_chunk)
 
         for chunk in pairs_chunks_same_languages:
+            source_language = chunk[0].source_language
+            target_language = chunk[0].target_language
             result = _evaluate_a_or_b_pairs_same_languages(source_language, target_language, chunk)
             for pairResult in result['results']:
                 aOrB = pairResult['AorB']

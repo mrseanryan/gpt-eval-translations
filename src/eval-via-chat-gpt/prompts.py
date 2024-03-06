@@ -36,7 +36,7 @@ Output *only* in JSON, like this: {exampleJson}'''
 
     def validate_pair(pair):
         assert_equal(source_language, pair.source_language, f"Expected pair to have source_language={source_language} but was {pair.source_language}")
-        assert_equal(target_language, pair.target_language, f"Expected pair to have target_language={source_language} but was {pair.source_language}")
+        assert_equal(target_language, pair.target_language, f"Expected pair to have target_language={target_language} but was {pair.target_language}")
 
     pair_prompts = []
     for pair in pairs:

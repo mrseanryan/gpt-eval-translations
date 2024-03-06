@@ -4,4 +4,4 @@ is_debug = False
 # 0 would be same each time. 0.7 or 1 would be difference each time, and less likely words can be used:
 temperature = 0.7
 
-is_dry_run = False
+is_dry_run = True

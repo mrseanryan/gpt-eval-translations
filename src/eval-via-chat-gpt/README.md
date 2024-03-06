@@ -71,4 +71,4 @@ source ~/.zprofile
 
 or
 
-`python main.py ..\..\test-resources\english-to-spanish.csv`
+`python main.py ..\..\test-resources\english-to-spanish.csv` 3
