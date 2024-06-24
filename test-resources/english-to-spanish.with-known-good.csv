@@ -1,2 +1,2 @@
-# original_text, translation_a, translation_b, known_good
-How do I get to the beach?,cómo puedo llegar a la playa,Cómo llego a la playa,¿Cómo llego a la playa?
+# original_text, source_language, target_language, translation_a, translation_b, known_good
+How do I get to the beach?,English,Spanish,cómo puedo llegar a la playa,Cómo llego a la playa,¿Cómo llego a la playa?
